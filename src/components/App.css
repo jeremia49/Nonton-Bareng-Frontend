@@ -1,0 +1,88 @@
+
+body{
+  background-image: url("../images/compressed-bg.jpg");
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: fixed;
+}
+
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  animation-name: fadeinbg;
+  animation-duration: 2s;
+  background-color: rgba(0,0,0,0.7);
+}
+
+.App2 {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  animation-name: fadeinbginverse;
+  background-color: rgba(0,0,0,0.125);
+  animation-duration: 2s;
+}
+
+#left{
+  float:left;
+  min-height: 100vh;
+  line-height: 0;
+
+}
+#left h2{
+    text-align: center;
+    font-weight: normal;
+}
+#left h5{
+  text-align: center;
+  font-weight:lighter;
+}
+#left p{
+  margin-top: -10px;
+  text-align: center;
+  font-weight:lighter;
+  font-size: 20px;
+}
+
+#right{
+  float:center;
+  min-height: 100vh;
+  line-height: 0;
+}
+
+@keyframes fadeinbg {
+  from {
+    background-color: rgba(0,0,0,0.125);
+  }
+  to{
+    background-color: rgba(0,0,0,0.7);
+  }
+}
+
+@keyframes fadeinbginverse {
+  from {
+    background-color: rgba(0,0,0,1);
+  }
+  to{
+    background-color: rgba(0,0,0,0.125);
+  }
+}
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  body{
+    background-image: url("../images/portrait-bg.jpeg");
+    background-position: center;
+  }
+
+}

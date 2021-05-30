@@ -1,0 +1,84 @@
+
+
+.bg-black{
+    background-color:white;
+}
+
+  
+@media (min-width: 768px) {
+    .h-md-100 { height: 100vh; }
+    .credits-left {display:none !important;}
+}
+
+@media (max-width: 768px){
+  .credits-right {
+    display: none !important;
+  }
+  .credits-left{
+    padding-top:20px;
+  }
+  .column-kanan{
+    margin-top:-10px;
+    margin-bottom: -10px;
+  }
+  .video-container{
+    width:100vw;
+    max-width: 100vw;
+    padding-left:0px;
+    padding-right:0px;
+  }
+
+}
+.users{
+  max-height: 25vh;
+  overflow-y: auto;
+}
+
+.chats{
+  overflow-y: auto;
+}
+
+.chat-containers{
+  overflow-y: auto;
+}
+
+.msg-time{
+  font-size:1rem;
+  color:grey;
+}
+
+.msg-text{
+  word-break: break-all; 
+}
+
+.send-btn{
+  cursor: pointer;
+}
+
+.video-container{
+  width:75vw;
+  max-width: 75vw;
+  padding-left:10px;
+  padding-right:10px;
+}
+
+.video-player{
+  width:60vw;
+  max-width: 65vw;
+}
+
+.vid{
+  margin-left:2rem;
+}
+
+.users li{
+  font-size: 14px;
+}
+
+.chats li{
+  font-size: 13px;
+}
+
+.color-white{
+  color:white;
+}
